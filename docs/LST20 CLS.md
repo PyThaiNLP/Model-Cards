@@ -1,6 +1,7 @@
 # LST20 CLS
 ## v0.2
 **Model Details**
+
 - Developer: Wannaphong Phatthiyaphaibun
 - Model date: 2020-10-03
 - Model version: 0.2
@@ -11,22 +12,28 @@
 - License: CC0
 
 **Intended Use**
+
 - Segmenting Thai text into clauses (smaller than a sentence but bigger than a word)
 - Not suitable for other language or non-news domain.
 
 **Factors**
+
 - Based on known problems with thai natural Language processing.
 
 **Metrics**
+
 - Evaluation metrics include precision, recall and f1-score.
 
 **Training Data**
+
 LST20 Corpus Train set (news domain)
 
 **Evaluation Data**
+
 LST20 Corpus Test set (news domain)
 
 **Quantitative Analyses**
+
 ```
               precision    recall  f1-score   support
 
@@ -46,5 +53,3 @@ no ideas
 
 - The user must perform word segmentation first before using this model.
 - Thai text only
-
-[^ Back to top](#index)
