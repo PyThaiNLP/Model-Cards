@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>CRFcut - Model Cards</title>
+        <title>thai2fit - Model Cards</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,8 +36,8 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Model Cards</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">CRFcut</a>
+                            <li class="navitem">
+                                <a href="../CRFcut/" class="nav-link">CRFcut</a>
                             </li>
                             <li class="navitem">
                                 <a href="../Chunk%20Parser/" class="nav-link">Chunk Parser</a>
@@ -57,8 +57,8 @@
                             <li class="navitem">
                                 <a href="../WangchanBERTa/" class="nav-link">WangchanBERTa</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../thai2fit/" class="nav-link">thai2fit</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">thai2fit</a>
                             </li>
                         </ul>
 
@@ -69,12 +69,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
+                                <a rel="prev" href="../WangchanBERTa/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Chunk%20Parser/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -96,9 +96,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#crfcut" class="nav-link">CRFcut</a>
+            <li class="nav-item" data-level="1"><a href="#thai2fit" class="nav-link">thai2fit</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#v10" class="nav-link">v1.0</a>
+            <li class="nav-item" data-level="2"><a href="#v032" class="nav-link">v0.32</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -109,186 +109,37 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="crfcut">CRFcut</h1>
-<h2 id="v10">v1.0</h2>
+<h1 id="thai2fit">thai2fit</h1>
+<h2 id="v032">v0.32</h2>
 <p><strong>Model Details</strong></p>
 <ul>
-<li>Developer: Chonlapat Patanajirasit</li>
-<li>Model date: 2020-05-09</li>
-<li>Model version: 1.0</li>
-<li>Used in PyThaiNLP version: 2.2 +</li>
-<li>Filename: <code>pythainlp/corpus/sentenceseg_crfcut.model</code></li>
-<li>GitHub: https://github.com/vistec-AI/crfcut</li>
-<li>CRF Model</li>
-<li>License: CC0</li>
+<li>Developer: Charin Polpanumas</li>
+<li>Model date: 2019-06-14</li>
+<li>Model version: 0.32</li>
+<li>Used in PyThaiNLP version: 2.0+</li>
+<li>Filename: <code>~/pythainlp-data/itos_lstm.pkl</code> and <code>~/pythainlp-data/thwiki_model_lstm.pth</code></li>
+<li>GitHub: <a href="https://github.com/cstorm125/thai2fit">https://github.com/cstorm125/thai2fit</a></li>
+<li>Notebook for training: <a href="https://github.com/cstorm125/thai2fit/blob/96fe40d1a9f270dfe0d3a61d2a93254df4078b0d/thwiki_lm/thwiki_lm.ipynb">https://github.com/cstorm125/thai2fit/blob/96fe40d1a9f270dfe0d3a61d2a93254df4078b0d/thwiki_lm/thwiki_lm.ipynb</a> </li>
+<li>Language Model</li>
+<li>License: MIT License</li>
 </ul>
-<p><strong>Intended Use</strong>
-- Segmenting Thai text into sentences.</p>
-<p><strong>Factors</strong>
-- Based on known problems with thai natural Language processing.</p>
-<p><strong>Metrics</strong>
-- Evaluation metrics include precision, recall and f1-score.</p>
-<p><strong>Training Data</strong>
-Ted + Orchid + Fake review</p>
-<p><strong>Evaluation Data</strong>
-The result of CRF-Cut is trained by different datasets are as follows:</p>
-<table>
-<thead>
-<tr>
-<th>dataset-train</th>
-<th>dataset-validate</th>
-<th>I-precision</th>
-<th>I-recall</th>
-<th>I-fscore</th>
-<th>E-precision</th>
-<th>E-recall</th>
-<th>E-fscore</th>
-<th>space-correct</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ted</td>
-<td>Ted</td>
-<td>0.99</td>
-<td>0.99</td>
-<td>0.99</td>
-<td>0.74</td>
-<td>0.70</td>
-<td>0.72</td>
-<td>0.82</td>
-</tr>
-<tr>
-<td>Ted</td>
-<td>Orchid</td>
-<td>0.95</td>
-<td>0.99</td>
-<td>0.97</td>
-<td>0.73</td>
-<td>0.24</td>
-<td>0.36</td>
-<td>0.73</td>
-</tr>
-<tr>
-<td>Ted</td>
-<td>Fake review</td>
-<td>0.98</td>
-<td>0.99</td>
-<td>0.98</td>
-<td>0.86</td>
-<td>0.70</td>
-<td>0.77</td>
-<td>0.78</td>
-</tr>
-<tr>
-<td>Orchid</td>
-<td>Ted</td>
-<td>0.98</td>
-<td>0.98</td>
-<td>0.98</td>
-<td>0.56</td>
-<td>0.59</td>
-<td>0.58</td>
-<td>0.71</td>
-</tr>
-<tr>
-<td>Orchid</td>
-<td>Orchid</td>
-<td>0.98</td>
-<td>0.99</td>
-<td>0.99</td>
-<td>0.85</td>
-<td>0.71</td>
-<td>0.77</td>
-<td>0.87</td>
-</tr>
-<tr>
-<td>Orchid</td>
-<td>Fake review</td>
-<td>0.97</td>
-<td>0.99</td>
-<td>0.98</td>
-<td>0.77</td>
-<td>0.63</td>
-<td>0.69</td>
-<td>0.70</td>
-</tr>
-<tr>
-<td>Fake review</td>
-<td>Ted</td>
-<td>0.99</td>
-<td>0.95</td>
-<td>0.97</td>
-<td>0.42</td>
-<td>0.85</td>
-<td>0.56</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>Fake review</td>
-<td>Orchid</td>
-<td>0.97</td>
-<td>0.96</td>
-<td>0.96</td>
-<td>0.48</td>
-<td>0.59</td>
-<td>0.53</td>
-<td>0.67</td>
-</tr>
-<tr>
-<td>Fake review</td>
-<td>Fake review</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0.98</td>
-<td>0.96</td>
-<td>0.97</td>
-<td>0.97</td>
-</tr>
-<tr>
-<td>Ted + Orchid + Fake review</td>
-<td>Ted</td>
-<td>0.99</td>
-<td>0.98</td>
-<td>0.99</td>
-<td>0.66</td>
-<td>0.77</td>
-<td>0.71</td>
-<td>0.78</td>
-</tr>
-<tr>
-<td>Ted + Orchid + Fake review</td>
-<td>Orchid</td>
-<td>0.98</td>
-<td>0.98</td>
-<td>0.98</td>
-<td>0.73</td>
-<td>0.66</td>
-<td>0.69</td>
-<td>0.82</td>
-</tr>
-<tr>
-<td>Ted + Orchid + Fake review</td>
-<td>Fake review</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0.98</td>
-<td>0.95</td>
-<td>0.96</td>
-<td>0.96</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Quantitative Analyses</strong>
-?
-<strong>Ethical Considerations</strong>
-no ideas</p>
+<p><strong>Intended Use</strong></p>
+<p>Language Modeling for Thai text classification pretrained or more.</p>
+<p><strong>Factors</strong></p>
+<p>Based on known problems with Thai natural Language processing. Language Modeling for many tasks of natural Language processing. ep. text classification, text generation, and more. </p>
+<p><strong>Metrics</strong></p>
+<p>Evaluation metrics include Perplexity.</p>
+<p><strong>Training Data</strong></p>
+<p>Thai Wikipedia Dump last updated February 17, 2019</p>
+<p><strong>Evaluation Data</strong></p>
+<p>Thai Wikipedia Dump by using 40M/200k/200k tokens of train-validation-test split</p>
+<p><strong>Quantitative Analyses</strong></p>
+<p>perplexity is <code>28.71067</code> with 60,005 embeddings at 400 dimensions</p>
+<p><strong>Ethical Considerations</strong></p>
+<p>This language model is based on the Thai Wikipedia Dump (include bias from Thai Wikipedia).</p>
 <p><strong>Caveats and Recommendations</strong></p>
-<ul>
-<li>Thai text only</li>
-</ul></div>
+<p>It’s want to have fastai 1.9 for using it or using it from pythainlp.
+It supports Thai Language only.</p></div>
             </div>
         </div>
 
