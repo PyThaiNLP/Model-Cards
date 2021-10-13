@@ -156,3 +156,81 @@ no ideas
 **Caveats and Recommendations**
 
 - Thai text only
+
+## v1.5.1
+
+**Model Details**
+
+- Developer: Wannaphong Phatthiyaphaibun
+- Model date: 2021-6-21
+- Model version: 1.5.1
+- Used in PyThaiNLP version: 2.4 +
+- Filename: `pythainlp/corpus/thainer_crf_1_5_1.model`
+- CRF Model
+- License: CC0
+- GitHub for Thai NER 1.5.1 (Data and train notebook): [https://github.com/wannaphong/thai-ner/tree/master/model/1.5.1](https://github.com/wannaphong/thai-ner/tree/master/model/1.5.1)
+
+**Intended Use**
+
+- Named-Entity Tagging for Thai.
+- Not suitable for other language or non-news domain.
+
+**Factors**
+
+- Based on known problems with thai natural Language processing.
+
+**Metrics**
+
+- Evaluation metrics include precision, recall and f1-score.
+
+**Training Data**
+
+ThaiNER 1.5 Corpus Train set (5089 sent)
+
+**Evaluation Data**
+
+ThaiNER 1.5 Corpus Test set (1274 sent)
+
+**Quantitative Analyses**
+
+```
+
+
+                precision    recall  f1-score   support
+
+        B-DATE       0.93      0.81      0.87       350
+        I-DATE       0.94      0.94      0.94       665
+         B-LAW       0.85      0.54      0.66        87
+         I-LAW       0.87      0.65      0.74       253
+         B-LEN       1.00      0.75      0.86        12
+         I-LEN       1.00      0.69      0.82        26
+    B-LOCATION       0.80      0.70      0.75       620
+    I-LOCATION       0.75      0.72      0.73       533
+       B-MONEY       1.00      0.90      0.95       131
+       I-MONEY       0.99      0.94      0.97       321
+B-ORGANIZATION       0.91      0.70      0.79      1334
+I-ORGANIZATION       0.80      0.73      0.76      1198
+     B-PERCENT       0.94      0.88      0.91        17
+     I-PERCENT       0.91      0.95      0.93        22
+      B-PERSON       0.96      0.78      0.86       607
+      I-PERSON       0.94      0.88      0.91      2181
+       B-PHONE       1.00      0.50      0.67         2
+       I-PHONE       1.00      1.00      1.00         8
+        B-TIME       0.93      0.66      0.77        87
+        I-TIME       0.97      0.77      0.86       158
+         B-URL       0.91      0.83      0.87        12
+         I-URL       0.93      0.96      0.94        94
+
+     micro avg       0.89      0.79      0.84      8718
+     macro avg       0.92      0.79      0.84      8718
+  weighted avg       0.89      0.79      0.84      8718
+   samples avg       0.16      0.16      0.16      8718
+```
+
+**Ethical Considerations**
+
+no ideas
+
+**Caveats and Recommendations**
+
+- Thai text only
