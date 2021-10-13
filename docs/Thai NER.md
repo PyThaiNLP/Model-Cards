@@ -11,7 +11,7 @@
 - Filename: `~/pythainlp-data/thai-ner-1-4.crfsuite`
 - CRF Model
 - License: CC0
-- GitHub for Thai NER 1.4 (Data and train notebook): https://github.com/wannaphong/thai-ner/tree/master/model/1.4
+- GitHub for Thai NER 1.4 (Data and train notebook): [https://github.com/wannaphong/thai-ner/tree/master/model/1.4](https://github.com/wannaphong/thai-ner/tree/master/model/1.4)
 
 **Intended Use**
 
@@ -27,9 +27,11 @@
 - Evaluation metrics include precision, recall and f1-score.
 
 **Training Data**
+
 ThaiNER 1.3 Corpus Train set
 
 **Evaluation Data**
+
 ThaiNER 1.3 Corpus Test set
 
 **Quantitative Analyses**
@@ -69,7 +71,9 @@ I-ORGANIZATION       0.84      0.77      0.81      1338
   weighted avg       0.91      0.84      0.87     10213
    samples avg       0.17      0.17      0.17     10213
 ```
+
 **Ethical Considerations**
+
 no ideas
 
 **Caveats and Recommendations**
@@ -88,7 +92,7 @@ no ideas
 - Filename: `~/pythainlp-data/thai-ner-1-5-newmm-lst20.crfsuite`
 - CRF Model
 - License: CC0
-- GitHub for Thai NER 1.5 (Data and train notebook): `thai-ner-1-5-newmm-lst20.ipynb` https://github.com/wannaphong/thai-ner/tree/master/model/1.5
+- GitHub for Thai NER 1.5 (Data and train notebook): `thai-ner-1-5-newmm-lst20.ipynb` [https://github.com/wannaphong/thai-ner/tree/master/model/1.5](https://github.com/wannaphong/thai-ner/tree/master/model/1.5)
 
 **Intended Use**
 
@@ -146,6 +150,7 @@ I-ORGANIZATION       0.80      0.73      0.76      1198
 ```
 
 **Ethical Considerations**
+
 no ideas
 
 **Caveats and Recommendations**

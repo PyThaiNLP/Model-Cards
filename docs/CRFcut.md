@@ -7,7 +7,7 @@
 - Model version: 1.0
 - Used in PyThaiNLP version: 2.2 +
 - Filename: `pythainlp/corpus/sentenceseg_crfcut.model`
-- GitHub: https://github.com/vistec-AI/crfcut
+- GitHub: [https://github.com/vistec-AI/crfcut](https://github.com/vistec-AI/crfcut)
 - CRF Model
 - License: CC0
 
@@ -24,6 +24,11 @@
 Ted + Orchid + Fake review
 
 **Evaluation Data**
+
+Ted + Orchid + Fake review dataset validate
+
+**Quantitative Analyses**
+
 The result of CRF-Cut is trained by different datasets are as follows:
 
 | dataset-train              | dataset-validate | I-precision | I-recall | I-fscore | E-precision | E-recall | E-fscore | space-correct |
@@ -41,9 +46,9 @@ The result of CRF-Cut is trained by different datasets are as follows:
 | Ted + Orchid + Fake review | Orchid           | 0.98        | 0.98     | 0.98     | 0.73        | 0.66     | 0.69     | 0.82          |
 | Ted + Orchid + Fake review | Fake review      | 1           | 1        | 1        | 0.98        | 0.95     | 0.96     | 0.96          |
 
-**Quantitative Analyses**
-?
+
 **Ethical Considerations**
+
 no ideas
 
 **Caveats and Recommendations**

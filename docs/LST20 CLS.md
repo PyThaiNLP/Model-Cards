@@ -7,7 +7,7 @@
 - Model version: 0.2
 - Used in PyThaiNLP version: 2.2.4 +
 - Filename: `~/pythainlp-data/cls-v0.2.crfsuite`
-- GitHub: https://github.com/PyThaiNLP/pythainlp/pull/479
+- GitHub: [https://github.com/PyThaiNLP/pythainlp/pull/479](https://github.com/PyThaiNLP/pythainlp/pull/479)
 - CRF Model
 - License: CC0
 
@@ -47,7 +47,8 @@ weighted avg       0.97      0.97      0.97    201623
  samples avg       0.94      0.94      0.94    201623
 ```
 **Ethical Considerations**
-no ideas
+
+- It trains from LST20 Corpus. It is possible to have a bias from LST20 Corpus.
 
 **Caveats and Recommendations**
 

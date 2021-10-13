@@ -6,9 +6,9 @@
 - Model date: 2020-12-29
 - Model version: 0.1
 - Used in PyThaiNLP version: 2.3+
-- GitHub: https://github.com/PyThaiNLP/pythainlp/pull/511
+- GitHub: [https://github.com/PyThaiNLP/pythainlp/pull/511](https://github.com/PyThaiNLP/pythainlp/pull/511)
 - License: CC0
-- train notebook: https://github.com/wannaphong/Thai_W2P/blob/main/train.ipynb
+- train notebook: [https://github.com/wannaphong/Thai_W2P/blob/main/train.ipynb](https://github.com/wannaphong/Thai_W2P/blob/main/train.ipynb)
 
 **Intended Use**
 

@@ -10,7 +10,7 @@
 - Filename: `pythainlp/corpus/pos_orchid_perceptron.json`
 - perceptron model
 - License: CC0
-- train notebook: https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_orchid_postag_pythainlp.ipynb
+- train notebook: [https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_orchid_postag_pythainlp.ipynb](https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_orchid_postag_pythainlp.ipynb)
 
 **Intended Use**
 
@@ -54,7 +54,7 @@ no ideas
 - Filename: `pythainlp/corpus/pos_lst20_perceptron-v0.2.3.json`
 - perceptron model
 - License: CC0
-- train notebook: https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_lst20_pythainlp.ipynb
+- train notebook: [https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_lst20_pythainlp.ipynb](https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_lst20_pythainlp.ipynb)
 
 **Intended Use**
 
@@ -124,7 +124,7 @@ no ideas
 - Filename: `pythainlp/corpus/pos_ud_unigram.json` and `pythainlp/corpus/pos_ud_unigram.json`
 - unigram model & perceptron model
 - License: CC0
-- train notebook: https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_ud_thai_pud_pythainlp.ipynb
+- train notebook: [https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_lst20_pythainlp.ipynb](https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_ud_thai_pud_pythainlp.ipynb)
 
 **Intended Use**
 
@@ -139,7 +139,7 @@ None
 
 **Training Data**
 
-UD_Thai-PUD v2.2 https://github.com/UniversalDependencies/UD_Thai-PUD/releases/tag/r2.2
+[UD_Thai-PUD v2.2](https://github.com/UniversalDependencies/UD_Thai-PUD/releases/tag/r2.2)
 
 **Evaluation Data**
 
@@ -183,7 +183,7 @@ None
 
 **Training Data**
 
-UD_Thai-PUD v2.8 https://github.com/UniversalDependencies/UD_Thai-PUD/releases/tag/r2.8
+[UD_Thai-PUD v2.8](https://github.com/UniversalDependencies/UD_Thai-PUD/releases/tag/r2.8)
 
 **Evaluation Data**
 

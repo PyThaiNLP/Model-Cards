@@ -8,9 +8,9 @@
 - Model date: 2021-01-21
 - Model version: 0.2
 - Used in PyThaiNLP version: 2.3
-- GitHub:  https://github.com/PyThaiNLP/pythainlp/pull/524
+- GitHub:  [https://github.com/PyThaiNLP/pythainlp/pull/524](https://github.com/PyThaiNLP/pythainlp/pull/524)
 - License: CC0
-- train notebook: https://github.com/PyThaiNLP/pythainlp_notebook/pull/1
+- train notebook: [https://github.com/PyThaiNLP/pythainlp_notebook/pull/1](https://github.com/PyThaiNLP/pythainlp_notebook/pull/1)
 - Dataset: ORCHID++ from [Thai Treebanks Dataset](https://github.com/tchayintr/thtb). We extract sentence subtree from tree to train data. (5,000 tree up to 5,935 tree)
 
 **Intended Use**
@@ -60,7 +60,7 @@ weighted avg       0.86      0.86      0.86      9495
 
 **Ethical Considerations**
 
-no ideas
+- It trains from orchid++ corpus. It is possible to have a bias from orchid++ corpus.
 
 **Caveats and Recommendations**
 
