@@ -15,7 +15,7 @@
 **Intended Use**
 
 - Segmenting Thai text into clauses (smaller than a sentence but bigger than a word)
-- Not suitable for other language or non-news domain.
+- Not suitable for other language or non-news domains.
 
 **Factors**
 

@@ -46,7 +46,7 @@ per: 0.0419
 
 **Ethical Considerations**
 
-thai phoneme based on website (wiktionary, Royal Institute et cetera). It may not be the dialect that you use in everyday life.
+This corpus is based on the website, such as wiktionary, Royal Institute et cetera and more. It may not be the dialect that you use in everyday life.
 
 **Caveats and Recommendations**
 

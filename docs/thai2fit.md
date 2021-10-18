@@ -21,7 +21,7 @@ Language Modeling for Thai text classification pretrained or more.
 
 **Factors**
 
-Based on known problems with Thai natural Language processing. Language Modeling for many tasks of natural Language processing. ep. text classification, text generation, and more. 
+Based on known problems with Thai natural Language processing. Language Modeling for many tasks of Natural Language processing. Ep. text classification, text generation, and more. 
 
 **Metrics**
 

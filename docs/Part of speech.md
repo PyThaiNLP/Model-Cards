@@ -16,7 +16,7 @@
 **Intended Use**
 
 - Part of speech for Thai.
-- Not suitable for other language or other domain of orchid corpus.
+- Not suitable for other languages or other domains of orchid corpus.
 
 **Factors**
 
@@ -62,7 +62,7 @@ No data (This corpus do not have the test set.)
 **Intended Use**
 
 - Part of speech for Thai.
-- Not suitable for other language or other domain of LST20 corpus.
+- Not suitable for other languages or other domains of LST20 corpus.
 
 **Factors**
 - Based on known problems with thai natural Language processing.
@@ -134,7 +134,7 @@ weighted avg       0.96      0.96      0.96    207278
 **Intended Use**
 
 - Part of speech for Thai.
-- Not suitable for other language or other domain of UD_Thai-PUD corpus.
+- Not suitable for other languages or other domains of UD_Thai-PUD corpus.
 
 **Factors**
 - Based on known problems with thai natural Language processing.
@@ -180,7 +180,7 @@ no ideas
 **Intended Use**
 
 - Part of speech for Thai.
-- Not suitable for other language or other domain of UD_Thai-PUD corpus.
+- Not suitable for other languages or other domains of UD_Thai-PUD corpus.
 
 **Factors**
 - Based on known problems with thai natural Language processing.

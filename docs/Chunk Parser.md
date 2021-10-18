@@ -17,7 +17,7 @@
 **Intended Use**
 
 - Parser thai sentence to phrase structure
-- Not suitable for other language or other domain of orchid corpus.
+- Not suitable for other languages or other domains of orchid corpus
 
 **Factors**
 
@@ -61,7 +61,7 @@ weighted avg       0.86      0.86      0.86      9495
 
 **Ethical Considerations**
 
-- It trains from orchid++ corpus. It is possible to have a bias from orchid++ corpus.
+- It trains from the orchid++ corpus. It is possible to have a bias from the  orchid++ corpus.
 
 **Caveats and Recommendations**
 

@@ -75,8 +75,9 @@ I-ORGANIZATION       0.84      0.77      0.81      1338
 
 **Ethical Considerations**
 
-- This model have bias form corpus creator. (Wannaphong Phatthiyaphaibun)
-- This model use part-of-speech model for build model so It does have bias from part-of-speech model.
+- This model has bias from corpus creator. (Wannaphong Phatthiyaphaibun)
+- This model uses the part-of-speech model to build it, so It does have a bias from the part-of-speech model.
+
 
 **Caveats and Recommendations**
 
@@ -154,8 +155,8 @@ I-ORGANIZATION       0.80      0.73      0.76      1198
 
 **Ethical Considerations**
 
-- This model have bias form corpus creator. (Wannaphong Phatthiyaphaibun)
-- This model use part-of-speech model for build model so It does have bias from part-of-speech model.
+- This model has bias from corpus creator. (Wannaphong Phatthiyaphaibun)
+- This model uses the part-of-speech model to build it, so It does have a bias from the part-of-speech model.
 
 **Caveats and Recommendations**
 
@@ -234,8 +235,8 @@ I-ORGANIZATION       0.80      0.73      0.76      1198
 
 **Ethical Considerations**
 
-- This model have bias form corpus creator. (Wannaphong Phatthiyaphaibun)
-- This model use part-of-speech model for build model so It does have bias from part-of-speech model.
+- This model has bias from corpus creator. (Wannaphong Phatthiyaphaibun)
+- This model uses the part-of-speech model to build it, so It does have a bias from the part-of-speech model.
 
 **Caveats and Recommendations**
 
