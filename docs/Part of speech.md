@@ -4,6 +4,7 @@
 **Model Details**
 
 - Developer: Wannaphong Phatthiyaphaibun
+- This report author: Wannaphong Phatthiyaphaibun
 - Model date: 2018-5-15
 - Model version: 1.0
 - Used in PyThaiNLP version: 1.7 +
@@ -33,10 +34,11 @@ Orchid Corpus
 
 **Quantitative Analyses**
 
-No data
+No data (This corpus do not have the test set.)
 
 **Ethical Considerations**
-no ideas
+
+- It trains from orchid Corpus. It is possible to have a bias from orchid Corpus.
 
 **Caveats and Recommendations**
 
@@ -48,6 +50,7 @@ no ideas
 **Model Details**
 
 - Developer: Wannaphong Phatthiyaphaibun
+- This report author: Wannaphong Phatthiyaphaibun
 - Model date: 2020-8-11
 - Model version: 0.2.3
 - Used in PyThaiNLP version: 2.2.5 +
@@ -104,7 +107,8 @@ weighted avg       0.96      0.96      0.96    207278
 ```
 
 **Ethical Considerations**
-no ideas
+
+- It trains from LST20 Corpus. It is possible to have a bias from LST20 Corpus.
 
 **Caveats and Recommendations**
 
@@ -118,6 +122,7 @@ no ideas
 **Model Details**
 
 - Developer: Wannaphong Phatthiyaphaibun
+- This report author: Wannaphong Phatthiyaphaibun
 - Model date: 2018-4-15
 - Model version: 0.1
 - Used in PyThaiNLP version: 1.7 - 2.3
@@ -146,7 +151,8 @@ None
 None
 
 **Quantitative Analyses**
-None
+
+(This corpus do not have the test set.)
 
 **Ethical Considerations**
 no ideas
@@ -161,6 +167,7 @@ no ideas
 **Model Details**
 
 - Developer: Wannaphong Phatthiyaphaibun
+- This report author: Wannaphong Phatthiyaphaibun
 - Model date: 2021-7-31
 - Model version: 0.2
 - Used in PyThaiNLP version: 2.4 +

@@ -3,6 +3,7 @@
 **Model Details**
 
 - Developer: Chonlapat Patanajirasit
+- This report author: Wannaphong Phatthiyaphaibun
 - Model date: 2020-05-09
 - Model version: 1.0
 - Used in PyThaiNLP version: 2.2 +

@@ -3,6 +3,7 @@
 **Model Details**
 
 - Developer: Wannaphong Phatthiyaphaibun
+- This report author: Wannaphong Phatthiyaphaibun
 - Model date: 2020-12-29
 - Model version: 0.1
 - Used in PyThaiNLP version: 2.3+
@@ -25,11 +26,11 @@
 
 **Training Data**
 
-Thai W2P
+Thai W2P (80%)
 
 **Evaluation Data** 
 
-Thai W2P
+Thai W2P (20%)
 
 **Quantitative Analyses**
 

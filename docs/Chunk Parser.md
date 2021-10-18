@@ -5,6 +5,7 @@
 **Model Details**
 
 - Developer: Wannaphong Phatthiyaphaibun
+- This report author: Wannaphong Phatthiyaphaibun
 - Model date: 2021-01-21
 - Model version: 0.2
 - Used in PyThaiNLP version: 2.3

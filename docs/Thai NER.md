@@ -5,6 +5,7 @@
 **Model Details**
 
 - Developer: Wannaphong Phatthiyaphaibun
+- This report author: Wannaphong Phatthiyaphaibun
 - Model date: 2020-5-21
 - Model version: 1.4
 - Used in PyThaiNLP version: 2.2 +
@@ -74,7 +75,8 @@ I-ORGANIZATION       0.84      0.77      0.81      1338
 
 **Ethical Considerations**
 
-no ideas
+- This model have bias form corpus creator. (Wannaphong Phatthiyaphaibun)
+- This model use part-of-speech model for build model so It does have bias from part-of-speech model.
 
 **Caveats and Recommendations**
 
@@ -86,6 +88,7 @@ no ideas
 **Model Details**
 
 - Developer: Wannaphong Phatthiyaphaibun
+- This report author: Wannaphong Phatthiyaphaibun
 - Model date: 2021-1-16
 - Model version: 1.5
 - Used in PyThaiNLP version: 2.3 +
@@ -151,7 +154,8 @@ I-ORGANIZATION       0.80      0.73      0.76      1198
 
 **Ethical Considerations**
 
-no ideas
+- This model have bias form corpus creator. (Wannaphong Phatthiyaphaibun)
+- This model use part-of-speech model for build model so It does have bias from part-of-speech model.
 
 **Caveats and Recommendations**
 
@@ -162,6 +166,7 @@ no ideas
 **Model Details**
 
 - Developer: Wannaphong Phatthiyaphaibun
+- This report author: Wannaphong Phatthiyaphaibun
 - Model date: 2021-6-21
 - Model version: 1.5.1
 - Used in PyThaiNLP version: 2.4 +
@@ -229,7 +234,8 @@ I-ORGANIZATION       0.80      0.73      0.76      1198
 
 **Ethical Considerations**
 
-no ideas
+- This model have bias form corpus creator. (Wannaphong Phatthiyaphaibun)
+- This model use part-of-speech model for build model so It does have bias from part-of-speech model.
 
 **Caveats and Recommendations**
 
