@@ -7,6 +7,7 @@
 - Model date: 2020-12-29
 - Model version: 0.1
 - Used in PyThaiNLP version: 2.3+
+- Filename: `~/pythainlp-data/w2p_0.1.npy`
 - GitHub: [https://github.com/PyThaiNLP/pythainlp/pull/511](https://github.com/PyThaiNLP/pythainlp/pull/511)
 - License: CC0
 - train notebook: [https://github.com/wannaphong/Thai_W2P/blob/main/train.ipynb](https://github.com/wannaphong/Thai_W2P/blob/main/train.ipynb)
