@@ -37,6 +37,9 @@
                                 <a href=".." class="nav-link">Model Cards</a>
                             </li>
                             <li class="navitem">
+                                <a href="../Blackboard%20CLS/" class="nav-link">Blackboard CLS</a>
+                            </li>
+                            <li class="navitem">
                                 <a href="../CRFcut/" class="nav-link">CRFcut</a>
                             </li>
                             <li class="navitem">
@@ -113,6 +116,10 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#ud_thai-pud-part-of-speech" class="nav-link">UD_Thai-PUD Part-of-speech</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#blackboard-perceptron" class="nav-link">blackboard perceptron</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -294,7 +301,69 @@ no ideas</p>
 <p><strong>Caveats and Recommendations</strong></p>
 <ul>
 <li>Thai word token only</li>
-</ul></div>
+</ul>
+<h2 id="blackboard-perceptron">blackboard perceptron</h2>
+<p><strong>Model Details</strong></p>
+<ul>
+<li>Developer: Wannaphong Phatthiyaphaibun</li>
+<li>This report author: Wannaphong Phatthiyaphaibun</li>
+<li>Model date: 2022-10-14</li>
+<li>Model version: 1.0</li>
+<li>Used in PyThaiNLP version: 3.2 +</li>
+<li>Filename: <code>blackboard_pt_tagger-v1.0_pythainlp.json</code></li>
+<li>perceptron model</li>
+<li>License: CC0</li>
+<li>GitHub: <a href="https://github.com/PyThaiNLP/pythainlp/issues/731">https://github.com/PyThaiNLP/pythainlp/issues/731</a></li>
+<li>train notebook: <a href="[https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_lst20_pythainlp.ipynb](https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_blackboard_pythainlp.ipynb)">https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_blackboard_pythainlp.ipynb</a></li>
+</ul>
+<p><strong>Intended Use</strong></p>
+<ul>
+<li>Part of speech for Thai.</li>
+<li>Not suitable for other languages or other domains of Blackboard treebank.</li>
+</ul>
+<p><strong>Factors</strong>
+- Based on known problems with thai natural Language processing.</p>
+<p><strong>Metrics</strong></p>
+<ul>
+<li>Evaluation metrics include precision, recall and f1-score.</li>
+</ul>
+<p><strong>Training Data</strong></p>
+<p>Blackboard treebank</p>
+<p><strong>Evaluation Data</strong></p>
+<p>Blackboard treebank</p>
+<p><strong>Quantitative Analyses</strong></p>
+<pre><code>              precision    recall  f1-score   support
+
+          AJ       0.90      0.90      0.90     16030
+          AV       0.92      0.91      0.91     38078
+          AX       0.97      0.96      0.97     44719
+          CC       0.98      0.99      0.99    127801
+          CL       0.93      0.87      0.90      6738
+          FX       1.00      1.00      1.00     28991
+          IJ       1.00      0.58      0.74        12
+          NG       1.00      1.00      1.00     12121
+          NN       0.99      0.99      0.99    283971
+          NU       0.98      0.97      0.98     19220
+          PA       0.98      0.88      0.93      1916
+          PR       0.93      0.89      0.91     12869
+          PS       0.96      0.96      0.96     39317
+          PU       1.00      1.00      1.00      1576
+          VV       0.98      0.98      0.98    257831
+          XX       1.00      0.50      0.67         4
+
+    accuracy                           0.98    891194
+   macro avg       0.97      0.90      0.93    891194
+weighted avg       0.98      0.98      0.98    891194
+</code></pre>
+<p><strong>Ethical Considerations</strong></p>
+<ul>
+<li>It trained from Blackboard treebank. It is possible to have a bias from Blackboard treebank.</li>
+</ul>
+<p><strong>Caveats and Recommendations</strong></p>
+<ul>
+<li>Thai word token only</li>
+</ul>
+<p><a href="#index">^ Back to top</a></p></div>
             </div>
         </div>
 

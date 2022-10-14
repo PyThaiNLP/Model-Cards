@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Thai G2P - Model Cards</title>
+        <title>Blackboard CLS - Model Cards</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,8 +36,8 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Model Cards</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../Blackboard%20CLS/" class="nav-link">Blackboard CLS</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Blackboard CLS</a>
                             </li>
                             <li class="navitem">
                                 <a href="../CRFcut/" class="nav-link">CRFcut</a>
@@ -60,8 +60,8 @@
                             <li class="navitem">
                                 <a href="../Thai2Rom/" class="nav-link">Thai2Rom</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Thai G2P</a>
+                            <li class="navitem">
+                                <a href="../Thai_G2P/" class="nav-link">Thai G2P</a>
                             </li>
                             <li class="navitem">
                                 <a href="../WangchanBERTa/" class="nav-link">WangchanBERTa</a>
@@ -78,12 +78,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../Thai2Rom/" class="nav-link">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../WangchanBERTa/" class="nav-link">
+                                <a rel="next" href="../CRFcut/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -105,9 +105,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#thai-g2p" class="nav-link">Thai G2P</a>
+            <li class="nav-item" data-level="1"><a href="#blackboard-cls" class="nav-link">Blackboard CLS</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#v01" class="nav-link">v0.1</a>
+            <li class="nav-item" data-level="2"><a href="#v10" class="nav-link">V1.0</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -118,52 +118,57 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="thai-g2p">Thai G2P</h1>
-<p>Thai Grapheme-to-Phoneme (Thai G2P) based on Deep Learning (Seq2Seq model)</p>
-<h2 id="v01">v0.1</h2>
+<h1 id="blackboard-cls">Blackboard CLS</h1>
+<h2 id="v10">V1.0</h2>
 <p><strong>Model Details</strong></p>
 <ul>
 <li>Developer: Wannaphong Phatthiyaphaibun</li>
 <li>This report author: Wannaphong Phatthiyaphaibun</li>
-<li>Model date: 2020-08-20</li>
-<li>Model version: 0.1</li>
-<li>Used in PyThaiNLP version: 2.2+</li>
-<li>Filename: <code>~/pythainlp-data/thaig2p-0.1.tar</code></li>
-<li>Pull request GitHub: <a href="https://github.com/PyThaiNLP/pythainlp/pull/377">https://github.com/PyThaiNLP/pythainlp/pull/377</a></li>
-<li>GitHub: <a href="https://github.com/wannaphong/thai-g2p">https://github.com/wannaphong/thai-g2p</a></li>
-<li>Train notebook: <a href="https://github.com/wannaphong/thai-g2p/blob/master/train.ipynb">https://github.com/wannaphong/thai-g2p/blob/master/train.ipynb</a></li>
-<li>Dataset: <a href="https://github.com/wannaphong/thai-g2p/blob/master/wiktionary-11-2-2020.tsv">wiktionary-11-2-2020.tsv</a></li>
-<li>Seq2Seq model</li>
+<li>Model date: 2022-10-14</li>
+<li>Model version: 1.0</li>
+<li>Used in PyThaiNLP version: 3.2 +</li>
+<li>Filename: <code>pythainlp/corpus/blackboard-cls_v1.0.crfsuite</code></li>
+<li>GitHub: <a href="https://github.com/PyThaiNLP/pythainlp/issues/729">https://github.com/PyThaiNLP/pythainlp/issues/729</a></li>
+<li>CRF Model</li>
 <li>License: CC0</li>
 </ul>
 <p><strong>Intended Use</strong></p>
-<p>Grapheme-to-Phoneme conversion tool.</p>
+<ul>
+<li>Segmenting Thai text into clauses (smaller than a sentence but bigger than a word)</li>
+<li>Not suitable for other language or non-news domains.</li>
+</ul>
 <p><strong>Factors</strong></p>
 <ul>
-<li>Based on thai grapheme-to-phoneme conversion problems.</li>
+<li>Based on known problems with thai natural Language processing.</li>
 </ul>
 <p><strong>Metrics</strong></p>
-<p>f1-score.</p>
+<ul>
+<li>Evaluation metrics include precision, recall and f1-score.</li>
+</ul>
 <p><strong>Training Data</strong></p>
-<p>wiktionary trainset</p>
+<p>Blackboard treebank</p>
 <p><strong>Evaluation Data</strong></p>
-<p>wiktionary testset</p>
+<p>Blackboard treebank</p>
 <p><strong>Quantitative Analyses</strong></p>
-<pre><code>F1 (macro-average) =  0.9415941561267093
-EM =  0.71
-EM (Character-level) =  0.8660247630539959
-save best model em score=0.71 at epoch=1148
-Save model at epoch  1148
-Epoch: 1149 | Time: 2m 55s
-    Train Loss: 0.352 | Train PPL:   1.422
-     Val. Loss: 0.512 |  Val. PPL:   1.669
-epoch=1149, teacher_forcing_ratio=0.4
+<pre><code>              precision    recall  f1-score   support
+
+       B_CLS       1.00      1.00      1.00     91698
+       E_CLS       1.00      1.00      1.00     91700
+       I_CLS       1.00      1.00      1.00    707795
+
+   micro avg       1.00      1.00      1.00    891193
+   macro avg       1.00      1.00      1.00    891193
+weighted avg       1.00      1.00      1.00    891193
+ samples avg       1.00      1.00      1.00    891193
 </code></pre>
 <p><strong>Ethical Considerations</strong></p>
-<p>This model is based on the Thai wiktionary Dump (include bias from Thai wiktionary).</p>
+<ul>
+<li>It trains from Blackboard treebank. It is possible to have a bias from Blackboard treebank.</li>
+</ul>
 <p><strong>Caveats and Recommendations</strong></p>
 <ul>
-<li>1 Thai word only</li>
+<li>The user must perform word segmentation first before using this model.</li>
+<li>Thai text only</li>
 </ul></div>
             </div>
         </div>
