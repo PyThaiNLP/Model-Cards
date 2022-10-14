@@ -205,3 +205,75 @@ no ideas
 **Caveats and Recommendations**
 
 - Thai word token only
+
+## blackboard perceptron
+
+**Model Details**
+
+- Developer: Wannaphong Phatthiyaphaibun
+- This report author: Wannaphong Phatthiyaphaibun
+- Model date: 2022-10-14
+- Model version: 1.0
+- Used in PyThaiNLP version: 3.2 +
+- Filename: `blackboard_pt_tagger-v1.0_pythainlp.json`
+- perceptron model
+- License: CC0
+- GitHub: [https://github.com/PyThaiNLP/pythainlp/issues/731](https://github.com/PyThaiNLP/pythainlp/issues/731)
+- train notebook: [https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_blackboard_pythainlp.ipynb]([https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_lst20_pythainlp.ipynb](https://github.com/PyThaiNLP/pythainlp_notebook/blob/master/postag/train_blackboard_pythainlp.ipynb))
+
+**Intended Use**
+
+- Part of speech for Thai.
+- Not suitable for other languages or other domains of Blackboard treebank.
+
+**Factors**
+- Based on known problems with thai natural Language processing.
+
+**Metrics**
+
+- Evaluation metrics include precision, recall and f1-score.
+
+**Training Data**
+
+Blackboard treebank
+
+**Evaluation Data**
+
+Blackboard treebank
+
+**Quantitative Analyses**
+
+```
+              precision    recall  f1-score   support
+
+          AJ       0.90      0.90      0.90     16030
+          AV       0.92      0.91      0.91     38078
+          AX       0.97      0.96      0.97     44719
+          CC       0.98      0.99      0.99    127801
+          CL       0.93      0.87      0.90      6738
+          FX       1.00      1.00      1.00     28991
+          IJ       1.00      0.58      0.74        12
+          NG       1.00      1.00      1.00     12121
+          NN       0.99      0.99      0.99    283971
+          NU       0.98      0.97      0.98     19220
+          PA       0.98      0.88      0.93      1916
+          PR       0.93      0.89      0.91     12869
+          PS       0.96      0.96      0.96     39317
+          PU       1.00      1.00      1.00      1576
+          VV       0.98      0.98      0.98    257831
+          XX       1.00      0.50      0.67         4
+
+    accuracy                           0.98    891194
+   macro avg       0.97      0.90      0.93    891194
+weighted avg       0.98      0.98      0.98    891194
+```
+
+**Ethical Considerations**
+
+- It trained from Blackboard treebank. It is possible to have a bias from Blackboard treebank.
+
+**Caveats and Recommendations**
+
+- Thai word token only
+
+[^ Back to top](#index)
