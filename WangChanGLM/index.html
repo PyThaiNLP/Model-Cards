@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Thai W2P - Model Cards</title>
+        <title>WangChanGLM - Model Cards</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -51,8 +51,8 @@
                             <li class="navitem">
                                 <a href="../Thai%20NER/" class="nav-link">Thai NER</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Thai W2P</a>
+                            <li class="navitem">
+                                <a href="../Thai%20W2P/" class="nav-link">Thai W2P</a>
                             </li>
                             <li class="navitem">
                                 <a href="../Thai2Rom/" class="nav-link">Thai2Rom</a>
@@ -60,8 +60,8 @@
                             <li class="navitem">
                                 <a href="../Thai_G2P/" class="nav-link">Thai G2P</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../WangChanGLM/" class="nav-link">WangChanGLM</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">WangChanGLM</a>
                             </li>
                             <li class="navitem">
                                 <a href="../WangchanBERTa/" class="nav-link">WangchanBERTa</a>
@@ -78,12 +78,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../Thai%20NER/" class="nav-link">
+                                <a rel="prev" href="../Thai_G2P/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Thai2Rom/" class="nav-link">
+                                <a rel="next" href="../WangchanBERTa/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -105,7 +105,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#thai-w2p" class="nav-link">Thai W2P</a>
+            <li class="nav-item" data-level="1"><a href="#wangchanglm" class="nav-link">WangChanGLM</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -114,51 +114,11 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="thai-w2p">Thai W2P</h1>
-<p><strong>Model Details</strong></p>
+<h1 id="wangchanglm">WangChanGLM</h1>
 <ul>
-<li>Developer: Wannaphong Phatthiyaphaibun</li>
 <li>This report author: Wannaphong Phatthiyaphaibun</li>
-<li>Model date: 2020-12-29</li>
-<li>Model version: 0.1</li>
-<li>Used in PyThaiNLP version: 2.3+</li>
-<li>Filename: <code>~/pythainlp-data/w2p_0.1.npy</code></li>
-<li>GitHub: <a href="https://github.com/PyThaiNLP/pythainlp/pull/511">https://github.com/PyThaiNLP/pythainlp/pull/511</a></li>
-<li>License: CC0</li>
-<li>train notebook: <a href="https://github.com/wannaphong/Thai_W2P/blob/main/train.ipynb">https://github.com/wannaphong/Thai_W2P/blob/main/train.ipynb</a></li>
 </ul>
-<p><strong>Intended Use</strong></p>
-<ul>
-<li>Converter thai word to thai phoneme</li>
-<li>Not suitable for other language.</li>
-</ul>
-<p><strong>Factors</strong></p>
-<ul>
-<li>Based on thai word to thai phoneme problems.</li>
-</ul>
-<p><strong>Metrics</strong></p>
-<ul>
-<li>Evaluation metrics include phoneme error rate (number error / number phonemes)</li>
-</ul>
-<p><strong>Training Data</strong></p>
-<p>Thai W2P (80%)</p>
-<p><strong>Evaluation Data</strong> </p>
-<p>Thai W2P (20%)</p>
-<p><strong>Quantitative Analyses</strong></p>
-<pre><code>epoch: 100
-step: 100, loss: 0.03179970383644104
-step: 200, loss: 0.04126007482409477
-step: 300, loss: 0.01877519115805626
-step: 400, loss: 0.03311225399374962
-per: 0.0432
-per: 0.0419
-</code></pre>
-<p><strong>Ethical Considerations</strong></p>
-<p>This corpus is based on the website, such as wiktionary, Royal Institute et cetera and more. It may not be the dialect that you use in everyday life.</p>
-<p><strong>Caveats and Recommendations</strong></p>
-<ul>
-<li>1 Thai word only</li>
-</ul></div>
+<p>You can read the model card of WangChanGLM at <a href="https://huggingface.co/pythainlp/wangchanglm-7.5B-sft-en">pythainlp/wangchanglm-7.5B-sft-en</a>.</p></div>
             </div>
         </div>
 
