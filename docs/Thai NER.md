@@ -241,3 +241,7 @@ I-ORGANIZATION       0.80      0.73      0.76      1198
 **Caveats and Recommendations**
 
 - Thai text only
+
+## v2.0
+
+Host: [https://huggingface.co/pythainlp/thainer-corpus-v2-base-model](https://huggingface.co/pythainlp/thainer-corpus-v2-base-model)
