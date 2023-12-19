@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Thai W2P - Model Cards</title>
+        <title>CLS - Model Cards</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -33,6 +33,9 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Model Cards</a>
                             </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">CLS</a>
+                            </li>
                             <li class="navitem">
                                 <a href="../CRFcut/" class="nav-link">CRFcut</a>
                             </li>
@@ -44,9 +47,6 @@
                             </li>
                             <li class="navitem">
                                 <a href="../Part%20of%20speech/" class="nav-link">Part of speech</a>
-                            </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Thai W2P</a>
                             </li>
                             <li class="navitem">
                                 <a href="../Thai2Rom/" class="nav-link">Thai2Rom</a>
@@ -72,12 +72,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../Part%20of%20speech/" class="nav-link">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Thai2Rom/" class="nav-link">
+                                <a rel="next" href="../CRFcut/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -99,8 +99,16 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#thai-w2p" class="nav-link">Thai W2P</a>
+            <li class="nav-item" data-level="1"><a href="#cls" class="nav-link">CLS</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#blackboard-cls" class="nav-link">Blackboard CLS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lst20-cls" class="nav-link">LST20 CLS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -108,50 +116,110 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="thai-w2p">Thai W2P</h1>
+<h1 id="cls">CLS</h1>
+<h2 id="blackboard-cls">Blackboard CLS</h2>
+<h3 id="v10">V1.0</h3>
 <p><strong>Model Details</strong></p>
 <ul>
 <li>Developer: Wannaphong Phatthiyaphaibun</li>
 <li>This report author: Wannaphong Phatthiyaphaibun</li>
-<li>Model date: 2020-12-29</li>
-<li>Model version: 0.1</li>
-<li>Used in PyThaiNLP version: 2.3+</li>
-<li>Filename: <code>~/pythainlp-data/w2p_0.1.npy</code></li>
-<li>GitHub: <a href="https://github.com/PyThaiNLP/pythainlp/pull/511">https://github.com/PyThaiNLP/pythainlp/pull/511</a></li>
+<li>Model date: 2022-10-14</li>
+<li>Model version: 1.0</li>
+<li>Used in PyThaiNLP version: 3.2 +</li>
+<li>Filename: <code>pythainlp/corpus/blackboard-cls_v1.0.crfsuite</code></li>
+<li>GitHub: <a href="https://github.com/PyThaiNLP/pythainlp/issues/729">https://github.com/PyThaiNLP/pythainlp/issues/729</a></li>
+<li>CRF Model</li>
 <li>License: CC0</li>
-<li>train notebook: <a href="https://github.com/wannaphong/Thai_W2P/blob/main/train.ipynb">https://github.com/wannaphong/Thai_W2P/blob/main/train.ipynb</a></li>
 </ul>
 <p><strong>Intended Use</strong></p>
 <ul>
-<li>Converter thai word to thai phoneme</li>
-<li>Not suitable for other language.</li>
+<li>Segmenting Thai text into clauses (smaller than a sentence but bigger than a word)</li>
+<li>Not suitable for other language or non-news domains.</li>
 </ul>
 <p><strong>Factors</strong></p>
 <ul>
-<li>Based on thai word to thai phoneme problems.</li>
+<li>Based on known problems with thai natural Language processing.</li>
 </ul>
 <p><strong>Metrics</strong></p>
 <ul>
-<li>Evaluation metrics include phoneme error rate (number error / number phonemes)</li>
+<li>Evaluation metrics include precision, recall and f1-score.</li>
 </ul>
 <p><strong>Training Data</strong></p>
-<p>Thai W2P (80%)</p>
-<p><strong>Evaluation Data</strong> </p>
-<p>Thai W2P (20%)</p>
+<p>Blackboard treebank</p>
+<p><strong>Evaluation Data</strong></p>
+<p>Blackboard treebank</p>
 <p><strong>Quantitative Analyses</strong></p>
-<pre><code>epoch: 100
-step: 100, loss: 0.03179970383644104
-step: 200, loss: 0.04126007482409477
-step: 300, loss: 0.01877519115805626
-step: 400, loss: 0.03311225399374962
-per: 0.0432
-per: 0.0419
+<pre><code>              precision    recall  f1-score   support
+
+       B_CLS       1.00      1.00      1.00     91698
+       E_CLS       1.00      1.00      1.00     91700
+       I_CLS       1.00      1.00      1.00    707795
+
+   micro avg       1.00      1.00      1.00    891193
+   macro avg       1.00      1.00      1.00    891193
+weighted avg       1.00      1.00      1.00    891193
+ samples avg       1.00      1.00      1.00    891193
 </code></pre>
 <p><strong>Ethical Considerations</strong></p>
-<p>This corpus is based on the website, such as wiktionary, Royal Institute et cetera and more. It may not be the dialect that you use in everyday life.</p>
+<ul>
+<li>It trains from Blackboard treebank. It is possible to have a bias from Blackboard treebank.</li>
+</ul>
 <p><strong>Caveats and Recommendations</strong></p>
 <ul>
-<li>1 Thai word only</li>
+<li>The user must perform word segmentation first before using this model.</li>
+<li>Thai text only</li>
+</ul>
+<h2 id="lst20-cls">LST20 CLS</h2>
+<h3 id="v02">v0.2</h3>
+<p><strong>Model Details</strong></p>
+<ul>
+<li>Developer: Wannaphong Phatthiyaphaibun</li>
+<li>This report author: Wannaphong Phatthiyaphaibun</li>
+<li>Model date: 2020-10-03</li>
+<li>Model version: 0.2</li>
+<li>Used in PyThaiNLP version: 2.2.4 +</li>
+<li>Filename: <code>~/pythainlp-data/cls-v0.2.crfsuite</code></li>
+<li>GitHub: <a href="https://github.com/PyThaiNLP/pythainlp/pull/479">https://github.com/PyThaiNLP/pythainlp/pull/479</a></li>
+<li>CRF Model</li>
+<li>License: CC0</li>
+</ul>
+<p><strong>Intended Use</strong></p>
+<ul>
+<li>Segmenting Thai text into clauses (smaller than a sentence but bigger than a word)</li>
+<li>Not suitable for other language or non-news domains.</li>
+</ul>
+<p><strong>Factors</strong></p>
+<ul>
+<li>Based on known problems with thai natural Language processing.</li>
+</ul>
+<p><strong>Metrics</strong></p>
+<ul>
+<li>Evaluation metrics include precision, recall and f1-score.</li>
+</ul>
+<p><strong>Training Data</strong></p>
+<p>LST20 Corpus Train set (news domain)</p>
+<p><strong>Evaluation Data</strong></p>
+<p>LST20 Corpus Test set (news domain)</p>
+<p><strong>Quantitative Analyses</strong></p>
+<pre><code>              precision    recall  f1-score   support
+
+       B_CLS       0.90      0.94      0.92     16111
+       E_CLS       0.90      0.94      0.92     15947
+       I_CLS       0.99      0.97      0.98    169565
+
+   micro avg       0.97      0.97      0.97    201623
+   macro avg       0.93      0.95      0.94    201623
+weighted avg       0.97      0.97      0.97    201623
+ samples avg       0.94      0.94      0.94    201623
+</code></pre>
+<p><strong>Ethical Considerations</strong></p>
+<ul>
+<li>It trains from LST20 Corpus. It is possible to have a bias from LST20 Corpus.</li>
+</ul>
+<p><strong>Caveats and Recommendations</strong></p>
+<ul>
+<li>The user must perform word segmentation first before using this model.</li>
+<li>Thai text only</li>
 </ul></div>
             </div>
         </div>
