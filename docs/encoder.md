@@ -1,4 +1,5 @@
-# WangchanBERTa
+# Encoder models
+## WangchanBERTa
 
 - This report author: Wannaphong Phatthiyaphaibun
 
