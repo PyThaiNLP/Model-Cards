@@ -1,5 +1,6 @@
-# CRFcut
-## v1.0
+# Tokenizer
+## CRFcut
+### v1.0
 **Model Details**
 
 - Developer: Chonlapat Patanajirasit
@@ -51,6 +52,64 @@ The result of CRF-Cut is trained by different datasets are as follows:
 **Ethical Considerations**
 
 no ideas
+
+**Caveats and Recommendations**
+
+- Thai text only
+
+## Han-solo
+
+🪿 Han-solo: Thai syllable segmenter
+
+This work wants to create a Thai syllable segmenter that can work in the Thai social media domain.
+
+**Model Details**
+
+- Developer: Wannaphong Phatthiyaphaibun
+- Model date: 2023-07-30
+- Model version: 1.0
+- Used in PyThaiNLP version: 5.0
+- Filename: `pythainlp/corpus/han_solo.crfsuite`
+- GitHub: [https://github.com/PyThaiNLP/Han-solo](https://github.com/PyThaiNLP/Han-solo)
+- CRF Model
+- License: CC0
+
+**Intended Use**
+
+- Segmenting Thai text into syllables.
+
+
+**Factors**
+- Based on known problems with thai natural Language processing.
+
+**Metrics**
+F1-score
+
+**Training Data**
+Han-solo train set and Nutcha Dataset
+
+**Evaluation Data**
+
+Han-solo Testset
+
+**Quantitative Analyses**
+
+1 is split, and 0 is not split.
+
+```
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     61078
+           1       1.00      0.99      0.99     29468
+
+    accuracy                           1.00     90546
+   macro avg       1.00      1.00      1.00     90546
+weighted avg       1.00      1.00      1.00     90546
+```
+
+**Ethical Considerations**
+
+The model trained on news and social network domain. It can has biase from human and domain.
 
 **Caveats and Recommendations**
 
