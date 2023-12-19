@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>CRFcut - Model Cards</title>
+        <title>Tokenizer - Model Cards</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,9 +36,6 @@
                             <li class="navitem">
                                 <a href="../CLS/" class="nav-link">CLS</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">CRFcut</a>
-                            </li>
                             <li class="navitem">
                                 <a href="../Chunk%20Parser/" class="nav-link">Chunk Parser</a>
                             </li>
@@ -57,6 +54,9 @@
                             <li class="navitem">
                                 <a href="../thai2fit/" class="nav-link">thai2fit</a>
                             </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Tokenizer</a>
+                            </li>
                             <li class="navitem">
                                 <a href="../transliteration/" class="nav-link">Transliteration</a>
                             </li>
@@ -69,12 +69,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../CLS/" class="nav-link">
+                                <a rel="prev" href="../thai2fit/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Chunk%20Parser/" class="nav-link">
+                                <a rel="next" href="../transliteration/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -96,9 +96,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#crfcut" class="nav-link">CRFcut</a>
+            <li class="nav-item" data-level="1"><a href="#tokenizer" class="nav-link">Tokenizer</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#v10" class="nav-link">v1.0</a>
+            <li class="nav-item" data-level="2"><a href="#crfcut" class="nav-link">CRFcut</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#han-solo" class="nav-link">Han-solo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -109,8 +113,9 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="crfcut">CRFcut</h1>
-<h2 id="v10">v1.0</h2>
+<h1 id="tokenizer">Tokenizer</h1>
+<h2 id="crfcut">CRFcut</h2>
+<h3 id="v10">v1.0</h3>
 <p><strong>Model Details</strong></p>
 <ul>
 <li>Developer: Chonlapat Patanajirasit</li>
@@ -286,6 +291,49 @@ Ted + Orchid + Fake review</p>
 </table>
 <p><strong>Ethical Considerations</strong></p>
 <p>no ideas</p>
+<p><strong>Caveats and Recommendations</strong></p>
+<ul>
+<li>Thai text only</li>
+</ul>
+<h2 id="han-solo">Han-solo</h2>
+<p>🪿 Han-solo: Thai syllable segmenter</p>
+<p>This work wants to create a Thai syllable segmenter that can work in the Thai social media domain.</p>
+<p><strong>Model Details</strong></p>
+<ul>
+<li>Developer: Wannaphong Phatthiyaphaibun</li>
+<li>Model date: 2023-07-30</li>
+<li>Model version: 1.0</li>
+<li>Used in PyThaiNLP version: 5.0</li>
+<li>Filename: <code>pythainlp/corpus/han_solo.crfsuite</code></li>
+<li>GitHub: <a href="https://github.com/PyThaiNLP/Han-solo">https://github.com/PyThaiNLP/Han-solo</a></li>
+<li>CRF Model</li>
+<li>License: CC0</li>
+</ul>
+<p><strong>Intended Use</strong></p>
+<ul>
+<li>Segmenting Thai text into syllables.</li>
+</ul>
+<p><strong>Factors</strong>
+- Based on known problems with thai natural Language processing.</p>
+<p><strong>Metrics</strong>
+F1-score</p>
+<p><strong>Training Data</strong>
+Han-solo train set and Nutcha Dataset</p>
+<p><strong>Evaluation Data</strong></p>
+<p>Han-solo Testset</p>
+<p><strong>Quantitative Analyses</strong></p>
+<p>1 is split, and 0 is not split.</p>
+<pre><code>              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     61078
+           1       1.00      0.99      0.99     29468
+
+    accuracy                           1.00     90546
+   macro avg       1.00      1.00      1.00     90546
+weighted avg       1.00      1.00      1.00     90546
+</code></pre>
+<p><strong>Ethical Considerations</strong></p>
+<p>The model trained on news and social network domain. It can has biase from human and domain.</p>
 <p><strong>Caveats and Recommendations</strong></p>
 <ul>
 <li>Thai text only</li>
