@@ -1,4 +1,4 @@
-# NER model
+# NER models
 
 This page will collect the Model Cards for NER in PyThaiNLP.
 
@@ -166,7 +166,7 @@ I-ORGANIZATION       0.80      0.73      0.76      1198
 
 - Thai text only
 
-## v1.5.1
+### v1.5.1
 
 **Model Details**
 
