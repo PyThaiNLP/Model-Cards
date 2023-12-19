@@ -71,6 +71,7 @@ This work wants to create a Thai syllable segmenter that can work in the Thai so
 - Used in PyThaiNLP version: 5.0
 - Filename: `pythainlp/corpus/han_solo.crfsuite`
 - GitHub: [https://github.com/PyThaiNLP/Han-solo](https://github.com/PyThaiNLP/Han-solo)
+- Pull request: [https://github.com/PyThaiNLP/pythainlp/pull/830](https://github.com/PyThaiNLP/pythainlp/pull/830)
 - CRF Model
 - License: CC0
 
