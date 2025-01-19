@@ -1,1 +1,21 @@
 theme: jekyll-theme-minimal
+
+# Enhanced navigation settings
+navigation: 
+  - home: index.md
+  - models:
+      - Chunk Parser: docs/Chunk Parser.md
+      - CLS: docs/CLS.md
+      - NER: docs/NER.md
+      - Encoder: docs/encoder.md
+      - Part of Speech: docs/Part of speech.md
+      - Thai2Fit: docs/thai2fit.md
+      - Tokenizer: docs/tokenizer.md
+      - Transliteration: docs/transliteration.md
+      - WangChanGLM: docs/WangChanGLM.md
+
+# Enhanced user interface settings
+ui:
+  search: true
+  toc: true
+  theme: dark
